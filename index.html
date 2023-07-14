@@ -3,97 +3,144 @@
 <head>
   <meta charset="UTF-8"/>
   <title>Controle de Versões com Git e GitHub</title>
+  <style>
+    body{
+      width: 800px;
+      margin: 0 auto;
+    }
+  </style>
 </head>
 <body>
-    <a href="index.html">Ínicio</a>
-    <a href="audio.html">Audio</a>
-    <a href="video.html">Vídeo</a>
+ 
+<p><img src="img/gitt.png"width="200"height="210"></P>
+ <h1>Página principal</h1> 
 
-  <p><img src="gitt.jng"width="300"height="200"></p>
-  <p><img src="ima.jpeg"width="300"height="200"></p> 
+  <a href="index.html">Home</a><br>
+  <a href="video.html">Videos</a><br>
+  <a href="audio.html">Audio</a><br>
 
-  <h1>Página principal</h1>
+ 
+ 
 
   <h2>O que é Git?</h2>
   <p>O Git é um sistema de controle de versões distribuído que permite o rastreamento de alterações em arquivos ao longo do tempo. Ele é amplamente utilizado para gerenciar o desenvolvimento de software, mas também pode ser aplicado a outros tipos de projetos.</p>
-
+  
   <h2>O que é o GitHub?</h2>
   <p>O GitHub é uma plataforma baseada em nuvem que fornece hospedagem de repositórios Git. Ele permite que equipes de desenvolvimento colaborem, compartilhem e controlem as versões de seu código-fonte de forma eficiente. Além disso, o GitHub oferece recursos adicionais, como problemas, solicitações de pull e integração contínua.</p>
 
-  <h2>Comandos Git</h2>
+  <h2>Comandos <code>GIT</code></h2>
   <p>A seguir, estão alguns comandos Git essenciais para você começar:</p>
 
-  <h3>Git init</h3>
-  <p><code>Git init</code> É usado para iniciar um repositório Git vazio em um diretório local. Isso cria um novo subdiretório oculto chamado ".git", onde todas as informações de controle de versão serão armazenadas.</p>
+  <h3><code>Git init</code></h3>
+  <p>É usado para iniciar um repositório Git vazio em um diretório local. Isso cria um novo subdiretório oculto chamado ".git", onde todas as informações de controle de versão serão armazenadas.</p>
 
-<h3>Git clone</h3>
-  <p> <code>Git clone</code>  clona um repositório Git existente. Isso cria uma cópia local de um repositório remoto em seu computador, permitindo que você trabalhe nele e contribua com alterações.</p>
 
-  <h3>Git branch</h3>
-  <p> <code>Git branch</code> cria, lista ou exclui branches (ramificações) no Git. Um branch é uma linha de desenvolvimento independente, permitindo que você trabalhe em diferentes recursos, versões ou correções simultaneamente.</p>
 
-  <h3>Git checkout</h3>
-  <p><code>Git checkout</code> altera o branch atual ou restaura arquivos de um commit específico. Esse comando permite que você mude entre diferentes branches e também recupere versões anteriores de arquivos.</p>
+
+  <h3><code>Git clone</code></h3>
+  <p>clona um repositório Git existente. Isso cria uma cópia local de um repositório remoto em seu computador, permitindo que você trabalhe nele e contribua com alterações.</p>
   
-  <h3>Git status</h3>
-  <p><code>Git status</code> mostra o estado atual do seu repositório Git. Ele exibe informações sobre arquivos modificados, adicionados ou excluídos, além de informar sobre a ramificação atual.</p>
 
-  <h3>git diff</h3>
-  <p> <code>Git diff</code> mostra as diferenças entre o estado atual do repositório e o último commit. Isso permite visualizar as alterações feitas nos arquivos antes de adicioná-las ao commit.</p>
+  <h3><code>Git branch</code></h3>
+  <p>Cria, lista ou exclui branches (ramificações) no <code>Git</code>. Um <code>branch</code> é uma linha de desenvolvimento independente, permitindo que você trabalhe em diferentes recursos, versões ou correções simultaneamente.</p>
+  
+  <h3><code>Git checkout</code> </h3>
+  <p>Altera o branch atual ou restaura arquivos de um <code>commit</code> específico. Esse comando permite que você mude entre diferentes branches e também recupere versões anteriores de arquivos.</p>
+  
 
-  <h3>Git add</h3>
-  <p> <code>Git add</code> adiciona arquivos ao índice do Git, preparando-os para serem incluídos em um commit. O comando "git add" permite selecionar quais alterações você deseja incluir no próximo commit.</p>
+  <h3><code>Git status</code></h3>
+  <p>Mostra o estado atual do seu repositório <code>Git</code>. Ele exibe informações sobre arquivos modificados, adicionados ou excluídos, além de informar sobre a ramificação atual.</p>
+  
 
-  <h3>Git commit</h3>
-  <p> <code>Git commit</code> grava as alterações no repositório Git como um novo commit. Um commit é um instantâneo das alterações feitas nos arquivos, permitindo que você rastreie o histórico e reverta alterações, se necessário.</p>
 
-  <h3>Git push</h3>
-  <p> <code>Git push</code> envia os commits locais para um repositório remoto. Isso atualiza o repositório remoto com suas alterações, tornando-as visíveis para outros colaboradores.</p>
 
-  <h3>Git pull</h3>
-  <p> <code>Git pull</code> obtém as alterações do repositório remoto e mescla-as com o branch atual. O comando "git pull" combina o "git fetch" (obtenção das alterações) e o "git merge" (mesclagem das alterações) em um único passo.</p>
+  <h3><code>Git diff</code></h3>
+  <p>Mostra as diferenças entre o estado atual do repositório e o último <code>commit</code>. Isso permite visualizar as alterações feitas nos arquivos antes de adicioná-las ao commit.</p>
+  
 
-  <h3>Git revert</h3>
-  <p><code>Git revert</code> desfaz um commit específico, criando um novo commit para desfazer as alterações introduzidas. Isso permite reverter commits anteriores sem perder o histórico.</p>
 
-  <h3>Git merge</h3>
-  <p><code>Git merge</code> combina as alterações de um branch com outro. O comando "git merge" é usado para incorporar as alterações de um branch secundário (ou feature branch) ao branch principal.</p>
 
-  <h3>Git stash</h3>
-  <p> <code>Git stash</code> salva temporariamente as alterações não finalizadas em um stash. Isso permite que você "esconda" as alterações atuais e as restaure posteriormente, permitindo uma mudança rápida de contexto.</p>
+  <h3><code>Git add</code></h3>
+  <p>Adiciona arquivos ao índice do Git, preparando-os para serem incluídos em um commit. O comando "git add" permite selecionar quais alterações você deseja incluir no próximo commit.</p>
+  
 
-  <h3>Git rm</h3>
-  <p> <code>Git rm</code> remove arquivos do repositório Git e do sistema de arquivos. O comando "git rm" remove um arquivo do controle de versão do Git e também exclui fisicamente o arquivo do sistema de arquivos.</p>
 
-  <h3>Git config</h3>
-  <p> <code>Git config</code> configura opções específicas do Git. Com o comando "git config", você pode definir configurações como nome de usuário, endereço de e-mail, formatação de log, entre outros.</p>
+  <h3><code>Git commit</code></h3>
+  <p>Grava as alterações no repositório Git como um novo <code>commit</code>. Um <code>commit</code> é um instantâneo das alterações feitas nos arquivos, permitindo que você rastreie o histórico e reverta alterações, se necessário.</p>
+  
 
-  <h3>Git reset</h3>
-  <p><code>Git reset</code> desfaz alterações em um branch, movendo o HEAD e a ramificação para um commit anterior. O comando "git reset" permite desfazer commits, descartar alterações ou mover o HEAD para um commit específico.</p>
+  <h3><code>Git push</code></h3>
+  <p>Envia os commits locais para um repositório remoto. Isso atualiza o repositório remoto com suas alterações, tornando-as visíveis para outros colaboradores.</p>
+  
 
-  <h3>Git remote</h3>
-  <p> <code>Git remote</code> gerencia conexões com repositórios remotos. Com o comando "git remote", você pode listar, adicionar ou remover repositórios remotos.</p>
+  <h3><code>Git pull</code></h3>
+  <p>Obtém as alterações do repositório remoto e mescla-as com o <code>branch</code> atual. O comando "git pull" combina o "git fetch" (obtenção das alterações) e o "git merge" (mesclagem das alterações) em um único passo.</p>
+  
 
-  <h3>Git fetch</h3>
-  <p><code>Git fetch</code> obtém as alterações do repositório remoto, mas não as mescla com o branch atual. Isso atualiza seu repositório local com as últimas alterações, permitindo que você as incorpore posteriormente.</p>
+  <h3><code>Git revert</code> </h3>
+  <p>Desfaz um commit específico, criando um novo <code>commit</code> para desfazer as alterações introduzidas. Isso permite reverter commits anteriores sem perder o histórico.</p>
+ 
+  <h3><code>Git merge</code></h3>
+  <p>Combina as alterações de um branch com outro. O comando "git merge" é usado para incorporar as alterações de um branch secundário (ou feature branch) ao branch principal.</p>
+ 
 
-  <h3>Git show</h3>
-  <p> <code>Git show</code> exibe informações sobre commits, tags ou objetos do Git. O comando "git show" mostra detalhes sobre um commit específico, como autor, mensagem, alterações, entre outros.</p>
 
-  <h3>Git help</h3>
-  <p> <code>Git help</code> exibe informações de ajuda sobre comandos Git específicos. Você pode executar "git help" seguido do nome do comando para obter detalhes e exemplos de uso.</p>
 
-  <h3>Git rebase</h3>
-  <p> <code>Git rebase</code> reaplica os commits de um branch em cima de outro. O comando "git rebase" permite modificar a história do Git, movendo, combinando ou dividindo commits.</p>
+  <h3><code>Git stash</code></h3>
+  <p>salva temporariamente as alterações não finalizadas em um stash. Isso permite que você "esconda" as alterações atuais e as restaure posteriormente, permitindo uma mudança rápida de contexto.</p>
+  
 
-  <h3>Git blame</h3>
-  <p><code>Git blame</code> mostra quem modificou cada linha de um arquivo e em qual commit. O comando "git blame" é útil para rastrear a autoria de alterações específicas em um arquivo.</p>
 
-  <h3>git tag</h3>
-  <p><code>Git tag</code> marca um commit específico com uma etiqueta. As tags são usadas para marcar versões importantes ou marcos no histórico do projeto.</p>
 
+  <h3> <code>Git rm</code></h3>
+  <p>Remove arquivos do repositório Git e do sistema de arquivos. O comando "git rm" remove um arquivo do controle de versão do Git e também exclui fisicamente o arquivo do sistema de arquivos.</p>
+  
+
+
+
+  <h3><code>Git config</code></h3>
+  <p>Configura opções específicas do Git. Com o comando "git config", você pode definir configurações como nome de usuário, endereço de e-mail, formatação de log, entre outros.</p>
+  
+
+  <h3><code>Git reset</code></h3>
+  <p>Desfaz alterações em um branch, movendo o HEAD e a ramificação para um commit anterior. O comando "git reset" permite desfazer commits, descartar alterações ou mover o HEAD para um commit específico.</p>
+  
+
+
+  <h3><code>Git remote</code></h3>
+  <p>Gerenciar conexões com repositórios remotos. Com o comando "git remote", você pode listar, adicionar ou remover repositórios remotos.</p>
+  
+
+
+
+
+  <h3><code>Git fetch</code></h3>
+  <p>Obtém as alterações do repositório remoto, mas não as mescla com o branch atual. Isso atualiza seu repositório local com as últimas alterações, permitindo que você as incorpore posteriormente.</p>
+  
+
+
+
+  <h3><code>Git show</code> </h3>
+  <p>Exibe informações sobre commits, tags ou objetos do Git. O comando "git show" mostra detalhes sobre um commit específico, como autor, mensagem, alterações, entre outros.</p>
+ 
+
+  <h3> <code>Git help</code></h3>
+  <p>Exibe informações de ajuda sobre comandos <code>Git</code> específicos. Você pode executar "git help" seguido do nome do comando para obter detalhes e exemplos de uso.</p>
+  
+
+
+
+  <h3><code>Git rebase</code> </h3>
+  <p>Reaplica os commits de um <code>branch</code> em cima de outro. O comando <code>"git rebase"</code> permite modificar a história do <code>Git</code>, movendo, combinando ou dividindo commits.</p>
+  
+  <h3><code>Git blame</code></h3>
+  <p>Mostra quem modificou cada linha de um arquivo e em qual commit. O comando <code>"git blame"</code> é útil para rastrear a autoria de alterações específicas em um arquivo.</p>
+
+  <h3><code>Git tag</code></h3>
+  <p>Marca um <code>commit</code> específico com uma etiqueta. As tags são usadas para marcar versões importantes ou marcos no histórico do projeto.</p>
+  
   <h2>Configuração e acesso ao GitHub</h2>
-  <p>Para utilizar o GitHub, siga os passos abaixo:</p>
+  <p>Siga os passos abaixo:</p>
 
   <ol>
     <li>Acesse <a href="https://github.com/">https://github.com/</a> e crie uma conta no GitHub.</li>
@@ -105,24 +152,31 @@
     <li>Use os comandos Git (por exemplo, <code>git add</code>, <code>git commit</code>, <code>git push</code>) para adicionar e modificar arquivos no repositório do GitHub.</li>
   </ol>
   
-    
-<html>
+
   <head>
-      <html>
-       <head>
- 
-          </head>
-            <body>
+    <meta charset="UTF-8">
+    <title>Minha tabela</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      td, th {
+        border: 1px solid black;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
     <table>
       <tr>
-       <td>linha 1 coluna 1</td> <td>linha 1 coluna 2</td> 
-       </tr>
-        <tr>
+        <td>linha 1 coluna 1</td>
+        <td>linha 1 coluna 2</td>
+      </tr>
+      <tr>
         <td>linha 2 coluna 1</td>
         <td>linha 2 coluna 2</td>
-</tr>
+      </tr>
     </table>
-</body>
-</html> 
-
-
+  </body>
+</html>
+  
